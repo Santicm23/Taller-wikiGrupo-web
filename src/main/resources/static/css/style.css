@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
-    background: #FEFFDE;
     font-family: 'Montserrat', sans-serif;
 }
 
-.titulo {
-    text-align: center;
+body {
+    background: #FEFFDE;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 .barra-contenido {
@@ -16,4 +18,76 @@
     top: 0;
     left: 0;
     width: 100%;
+}
+
+.titulo {
+    text-align: center;
+    color: #52734D;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #598d54;
+}
+
+.nombre {
+    position: relative;
+    color: #636363;
+}
+
+.nombre:before {
+    content: "linx";
+    width: 0%;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.5s;
+    color: black;
+}
+
+.nombre:hover:before {
+    width: 100%;
+}
+
+.tabla {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border-collapse: collapse;
+    text-align: center;
+    border-spacing: 0;
+    width: 80%;
+}
+
+th, td {
+    padding: 20px;
+}
+
+.col-1, .col-3 {
+    width: 20%
+}
+
+.col-2 {
+    width: 15%;
+}
+
+.col-4 {
+    width: max-content;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+.icon {
+    height: 50px;
+    aspect-ratio: 1 / 1;
+}
+
+.desc {
+    text-align: start;
 }
