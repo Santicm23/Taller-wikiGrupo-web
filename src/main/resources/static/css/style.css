@@ -1,93 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
-* {
-    font-family: 'Montserrat', sans-serif;
-}
 
-body {
-    background: #FEFFDE;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
-.barra-contenido {
-    position: relative;
-    background: #91C788;
-    height: 50px;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
 
 .titulo {
     text-align: center;
-    color: #52734D;
 }
 
-.subtitulo {
-    text-align: center;
-    color: #598d54;
-}
-
-.nombre {
-    position: relative;
-    color: #636363;
-}
-
-.nombre:before {
-    content: "linx";
-    width: 0%;
-    position: absolute;
-    overflow: hidden;
-    transition: all 0.5s;
-    color: black;
-}
-
-.nombre:hover:before {
-    width: 100%;
-}
-
-.tabla {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 10px;
-    border-collapse: collapse;
-    text-align: center;
-    border-spacing: 0;
-    width: 80%;
-}
-
-th, td {
-    padding: 20px;
-}
-
-.col-1, .col-3 {
-    width: 20%
-}
-
-.col-2 {
-    width: 15%;
-}
-
-.col-4 {
-    width: max-content;
-}
-
-tr:nth-child(odd) {
-    background-color: white;
-}
-
-tr:nth-child(even) {
-    background-color: lightgrey;
-}
-
-.icon {
-    height: 50px;
-    aspect-ratio: 1 / 1;
-}
-
-.desc {
-    text-align: start;
-}
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    height: 100px;
+  }
+  
