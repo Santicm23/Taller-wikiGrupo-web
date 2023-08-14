@@ -20,4 +20,8 @@ public class WikiView {
     public String paginaDescripcion() {
         return "descripcion";
     }
+    @GetMapping("pruebas")
+    public String paginaPruebas()  {
+        return "Pruebas";
+    }
 }
