@@ -22,6 +22,10 @@ public class WikiView {
     }
     @GetMapping("pruebas")
     public String paginaPruebas()  {
-        return "Pruebas";
+        return "pruebas";
+    }
+    @GetMapping("desarrollo")
+    public String paginaDesarrollo() {
+        return "desarrollo";
     }
 }
