@@ -15,19 +15,31 @@
 <section class="full-height gradient-background p-5">
     <h2>Contáctenos</h2>
     <div class="container-sm">
-        <form class="row g-3">
-            <div>
-                <label for="name-input" class="form-label">Nombre completo</label>
-                <input id="name-input" type="text" class="form-control w-75" style="max-width: 40ch" placeholder="Pepito Perez" required>
-            </div>
-            <div>
-                <label for="text-area-msg" class="form-label">Mensaje</label>
-                <textarea id="text-area-msg" class="form-control" rows="3" placeholder="Escribe algo"></textarea>
-            </div>
-            <div>
-                <button type="submit" class="btn btn-light">Enviar</button>
-            </div>
+
+        <form  action="mailto:mariajogogar1@gmail.com" method="post" enctype="text/plain">
+            <!-- Form permite realizar acciones, en este caso particular usando action, envía un correo
+            al correo indicado.
+           -->
+            <label>Your Name: </label>
+            <input type="text" name="yourName" value="" />
+            <!-- Label sirve  indicar en pantalla algo y con input recibo eso que estoy solicitando
+          type indica el tipo de dato, name el nombre de la variable a  la que le voy a meter el dato
+          y finalmente value es el valor con el que voy a inicializar la variable-->
+            <br />
+            <label>Your Email: </label>
+            <input type="email" name="yourEmail" value="" />
+            <br />
+            <label>Your Message: </label>
+            <br />
+            <textarea class="boxMS" name="yourMessage" rows="10" cols="50"></textarea>
+            <!-- Textarea me permite meter una variable de tipo texto y con rows y col indico el tamaño -->
+            <br />
+            <!-- br es un espacio -->
+            <input type="submit" name="" value="enviar" />
+            <!-- cuando es type submit crea un botón -->
         </form>
+        </form>
+
     </div>
 
     <div class="text-center mt-4">
