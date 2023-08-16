@@ -28,4 +28,8 @@ public class WikiView {
     public String paginaDesarrollo() {
         return "desarrollo";
     }
+    @GetMapping("despliegue")
+    public String paginaDespliegue() {
+        return "despliegue";
+    }
 }
