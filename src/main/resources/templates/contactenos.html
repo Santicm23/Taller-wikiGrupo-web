@@ -16,28 +16,36 @@
     <h2>Contáctenos</h2>
     <div class="container-sm">
 
-        <form  action="mailto:mariajogogar1@gmail.com" method="post" enctype="text/plain">
+        <form action="mailto:mariajogogar1@gmail.com" method="post" enctype="text/plain" class="g-3">
             <!-- Form permite realizar acciones, en este caso particular usando action, envía un correo
             al correo indicado.
            -->
-            <label>Your Name: </label>
-            <input type="text" name="yourName" value="" />
+            <div class="row">
+                <div class="col">
+                    <label>Your Name: </label>
+                    <input type="text" class="form-control" name="yourName" value="" />
+                </div>
+                <br />
+                <div class="col">
+                    <label>Your Email: </label>
+                    <input type="email" class="form-control" name="yourEmail" value="" />
+                </div>
+            </div>
             <!-- Label sirve  indicar en pantalla algo y con input recibo eso que estoy solicitando
           type indica el tipo de dato, name el nombre de la variable a  la que le voy a meter el dato
           y finalmente value es el valor con el que voy a inicializar la variable-->
             <br />
-            <label>Your Email: </label>
-            <input type="email" name="yourEmail" value="" />
-            <br />
-            <label>Your Message: </label>
-            <br />
-            <textarea class="boxMS" name="yourMessage" rows="10" cols="50"></textarea>
+            <div class="row">
+                <label>Your Message: </label>
+                <textarea class="boxMS form-control" name="yourMessage" rows="10" cols="50"></textarea>
+            </div>
             <!-- Textarea me permite meter una variable de tipo texto y con rows y col indico el tamaño -->
             <br />
             <!-- br es un espacio -->
-            <input type="submit" name="" value="enviar" />
+            <button type="submit" name="" class="btn btn-light" style="width: auto">
+                enviar
+            </button>
             <!-- cuando es type submit crea un botón -->
-        </form>
         </form>
 
     </div>
