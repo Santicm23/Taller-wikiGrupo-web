@@ -1,0 +1,13 @@
+   .seccion {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px;
+            box-shadow: 0px 0px 5px ;
+        }
+         .descripcion-proyecto p {
+            font-style: italic;
+        }
+        .requerimientos strong {
+            color: #007bff;
+        }
